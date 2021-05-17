@@ -23,12 +23,13 @@ function draw() {
   background(bg);  
   Engine.update(engine);
    
-  if(frameCount%60===0){
-    snow.push(new snowfall(random(width/2-10,width/2+10),10,10));
+  if(frameCount%40===0){
+    snow.push(new snowfall(random(width/2-10,width/2+10),20,20));
   }
 
-  for (var i = 0; i < particles.length; i++) {
+ 
+
+  for (var i = 0; i < snow.length; i++) {
     snow[i].display();
   }
-  
 }

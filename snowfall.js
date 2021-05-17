@@ -20,8 +20,7 @@ class snowfall {
         translate(pos.x, pos.y);
         rotate(angle);
         imageMode(CENTER);
-        ellipseMode(RADIUS);
-        ellipse(0, 0, this.radius,this.radius);
+        image(this.image,0,0,this.radius,this.radius);
         pop();
     }
 };
